@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Словарь</string>
+    <string name="enter">Введите слово</string>
+    <string name="translate">Перевести</string>
+    <string name="error">Перевод не найден</string>
+    <string name="connection">Нет соединения</string>
+    <string name="settings">Настройки</string>
+    <string name="language_key" translatable="false">language</string>
+    <string name="language_label">Языки</string>
+    <string name="save">Сохранить</string>
+
+    <string name="enru_labels">English-Русский</string>
+    <string name="ruen_labels">Русский-English</string>
+    <string name="plru_labels">Polski-Русский</string>
+    <string name="rupl_labels">Russian-Русский</string>
+    <string name="enru_values">en-ru</string>
+    <string name="ruen_values">ru-en</string>
+    <string name="plru_values">pl-ru</string>
+    <string name="rupl_values">ru-pl</string>
+</resources>

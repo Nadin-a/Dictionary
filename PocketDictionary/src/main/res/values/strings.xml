@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Dictionary</string>
+    <string name="enter">Enter your word</string>
+    <string name="translate">Translate</string>
+    <string name="error">Nothing found</string>
+    <string name="connection">No internet connection</string>
+    <string name="settings">Settings</string>
+    <string name="language_key" translatable="false">language</string>
+    <string name="language_label">Languages</string>
+    <string name="save">Save</string>
+
+    <string name="enru_labels">English-Русский</string>
+    <string name="ruen_labels">Русский-English</string>
+    <string name="plru_labels">Polski-Русский</string>
+    <string name="rupl_labels">Russian-Русский</string>
+    <string name="enru_values">en-ru</string>
+    <string name="ruen_values">ru-en</string>
+    <string name="plru_values">pl-ru</string>
+    <string name="rupl_values">ru-pl</string>
+</resources>

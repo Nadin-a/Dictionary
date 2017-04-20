@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+              xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/tvLanguages"
+        tools:text="ru-en"
+        android:textAppearance="?attr/textAppearanceListItem"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/text_view"
+            android:id="@+id/tvWord"
+            tools:text="слово"
+            android:textAppearance="?attr/textAppearanceListItem"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvTranslatedWord"
+            tools:text="word"
+            android:gravity="right"
+            android:background="@drawable/text_view"
+            android:textAppearance="?attr/textAppearanceListItem"/>
+
+    </LinearLayout>
+
+</LinearLayout>

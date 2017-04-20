@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="languages_labels">
+        <item>@string/enru_labels</item>
+        <item>@string/ruen_labels</item>
+        <item>@string/plru_labels</item>
+        <item>@string/rupl_labels</item>
+    </array>
+
+    <array name="languages_values">
+        <item>@string/enru_values</item>
+        <item>@string/ruen_values</item>
+        <item>@string/plru_values</item>
+        <item>@string/rupl_values</item>
+
+    </array>
+</resources>
