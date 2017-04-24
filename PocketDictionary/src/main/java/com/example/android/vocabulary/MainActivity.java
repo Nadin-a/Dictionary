@@ -22,9 +22,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.android.vocabulary.adapter.MyWordRecyclerViewAdapter;
 import com.example.android.vocabulary.data.WordContract;
 import com.example.android.vocabulary.databinding.ActivityMainBinding;
-import com.example.android.vocabulary.adapter.MyWordRecyclerViewAdapter;
 import com.example.android.vocabulary.server.ServerApi;
 import com.example.android.vocabulary.settings.SettingsActivity;
 import com.google.gson.Gson;
@@ -232,7 +232,7 @@ public class MainActivity extends AppCompatActivity implements
             contentValues.put(WordContract.WordEntry.COLUMN_WORD, mWord);
             contentValues.put(WordContract.WordEntry.COLUMN_TRANSLATE, mTranslatedWord);
 
-            Uri uri = getContentResolver().insert(WordContract.WordEntry.CONTENT_URI, contentValues);
+            getContentResolver().insert(WordContract.WordEntry.CONTENT_URI, contentValues);
             getSupportLoaderManager().restartLoader(TASK_LOADER_ID, null, MainActivity.this);
         }
     }
