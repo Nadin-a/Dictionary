@@ -29,6 +29,7 @@ import com.example.android.vocabulary.server.ServerApi;
 import com.example.android.vocabulary.settings.SettingsActivity;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonSyntaxException;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -152,10 +153,17 @@ public class MainActivity extends AppCompatActivity implements
                     mainBinding.btnSave.setVisibility(View.VISIBLE);
                 }
             }
-        } catch (IOException ioe) {
+        }
+        catch (JsonSyntaxException jse)
+        {
+            jse.printStackTrace();
+            Toast.makeText(MainActivity.this, getString(R.string.error), Toast.LENGTH_SHORT).show();
+        }
+        catch (IOException ioe) {
             ioe.printStackTrace();
             Toast.makeText(MainActivity.this, getString(R.string.connection), Toast.LENGTH_SHORT).show();
         }
+
     }
 
     @Override
