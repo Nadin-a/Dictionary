@@ -139,7 +139,9 @@ public class MainActivity extends AppCompatActivity implements
         getSupportLoaderManager().initLoader(TASK_LOADER_ID, null, this);
     }
 
-
+    /**
+     * Getting response from server
+     */
     private void getTranslate(Call<Object> call) {
         try {
             Response<Object> response = call.execute();
@@ -166,6 +168,9 @@ public class MainActivity extends AppCompatActivity implements
 
     }
 
+    /**
+     * Loading data from Content Provider
+     */
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
         return new AsyncTaskLoader<Cursor>(this) {
@@ -233,6 +238,10 @@ public class MainActivity extends AppCompatActivity implements
         }
     }
 
+
+    /**
+     * Saving word pair to database
+     */
     public void saveClick(View v) {
         if (v.getId() == R.id.btnSave) {
             ContentValues contentValues = new ContentValues();
