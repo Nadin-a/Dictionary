@@ -12,7 +12,7 @@
     <string name="enru_labels">English-Русский</string>
     <string name="ruen_labels">Русский-English</string>
     <string name="plru_labels">Polski-Русский</string>
-    <string name="rupl_labels">Russian-Русский</string>
+    <string name="rupl_labels">Russian-Polski</string>
     <string name="enru_values">en-ru</string>
     <string name="ruen_values">ru-en</string>
     <string name="plru_values">pl-ru</string>
